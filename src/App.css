@@ -1,0 +1,63 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+  min-height: 90vh;
+  color: #333; /* Add default text color for light mode */
+}
+
+.container.dark {
+  background: #1e1e1e;
+  color: #f0f0f0; /* Lighter text for dark mode */
+}
+
+/* Add specific styling for habit items */
+.habit-item {
+  background: white; /* Light background for habits in light mode */
+  color: #333; /* Dark text for habits in light mode */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.container.dark .habit-item {
+  background: #2d2d2d; /* Darker background for habits in dark mode */
+  color: #f0f0f0; /* Light text for habits in dark mode */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dark-mode-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.container.dark .dark-mode-toggle {
+  color: #f0f0f0;
+}
+
+.dark-mode-toggle:hover {
+  color: #555;
+}
+
+.container.dark .dark-mode-toggle:hover {
+  color: #bbb;
+}

@@ -1,0 +1,19 @@
+.habit-form {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.habit-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.add-button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

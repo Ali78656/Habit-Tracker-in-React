@@ -1,0 +1,16 @@
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.container.dark .habit-item {
+  background: #333;
+  color: white;
+  border-bottom: 1px solid #555;
+}
